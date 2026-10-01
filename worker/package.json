@@ -1,0 +1,1 @@
+{"name":"stackchan-cloud-gateway","private":true,"type":"module","scripts":{"test":"node --test test/*.test.mjs","dev":"wrangler dev --ip 127.0.0.1","check":"wrangler deploy --dry-run","deploy":"wrangler deploy","login":"wrangler login"},"devDependencies":{"qrcode":"1.5.4","wrangler":"4.145.0","ws":"8.22.0"}}

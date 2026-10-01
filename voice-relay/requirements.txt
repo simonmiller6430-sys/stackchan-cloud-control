@@ -1,0 +1,4 @@
+cryptography>=42
+edge-tts>=6.1
+imageio-ffmpeg>=0.4.9
+paho-mqtt>=2.0

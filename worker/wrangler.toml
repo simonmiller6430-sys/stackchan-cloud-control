@@ -1,0 +1,21 @@
+name = "stackchan-cloud-control"
+main = "src/worker.mjs"
+compatibility_date = "2026-09-27"
+workers_dev = true
+
+[assets]
+directory = "public"
+binding = "ASSETS"
+run_worker_first = true
+
+[vars]
+MQTT_WSS_URL = "https://broker-cn.emqx.io:8084/mqtt"
+TOPIC_PREFIX = "stackchan"
+
+[[durable_objects.bindings]]
+name = "ROBOT"
+class_name = "RobotGateway"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["RobotGateway"]
